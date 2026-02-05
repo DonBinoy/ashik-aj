@@ -12,6 +12,7 @@ import AuroraBackground from './components/AuroraBackground';
 import GravityMode from './components/GravityMode';
 
 function App() {
+  console.log('App component rendering...');
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
