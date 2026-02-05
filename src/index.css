@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@plugin "tailwindcss-animate";
+
+@theme {
+  --color-premium-black: #020202;
+  --color-premium-dark: #080808;
+  --color-premium-card: #0F0F0F;
+  --color-premium-yellow: #0066FF;
+  /* Electric Blue */
+  --color-premium-accent: #3B82F6;
+  /* Brighter Blue for accents */
+  --color-premium-gold: #ffffff;
+  --color-premium-silver: #F1F5F9;
+
+  --font-sans: "Inter", sans-serif;
+  --font-display: "Syne", sans-serif;
+
+  --background-image-gradient-premium: linear-gradient(to bottom, #020202, #0a0a0a);
+  --background-image-gradient-gold: linear-gradient(to right, #0066FF, #60A5FA);
+}
+
+/* Custom Utilities */
+@utility text-glow {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+@utility glass-card {
+  background: rgba(18, 18, 18, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@utility stroke-text-white {
+  -webkit-text-stroke: 2px rgba(255, 255, 255, 0.8);
+  color: transparent;
+}
+
+@utility stroke-text-blue {
+  -webkit-text-stroke: 1px #0066FF;
+  color: transparent;
+}
+
+/* Base Styles */
+@layer base {
+  body {
+    @apply bg-premium-black text-white font-sans antialiased overflow-x-hidden;
+  }
+}
