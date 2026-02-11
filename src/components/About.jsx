@@ -32,10 +32,10 @@ const About = () => {
                             I craft <span className="text-premium-yellow italic font-serif">visual narratives</span> that bridge the gap between imagination and reality. As a director and editor, my obsession is with the <span className="underline decoration-premium-yellow/50 decoration-1 underline-offset-8">rhythm of the cut</span> and the soul of the frame.
                         </p>
 
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 border-t border-white/10 pt-12">
+                        <div className="border-t border-white/10 pt-12">
                             <div>
                                 <h3 className="text-sm font-bold text-white mb-6 uppercase tracking-widest">Expertise</h3>
-                                <ul className="space-y-4 text-gray-400 font-light text-sm tracking-wide">
+                                <ul className="grid grid-cols-2 gap-4 text-gray-400 font-light text-sm tracking-wide">
                                     <li className="flex items-center gap-3">
                                         <span className="w-1.5 h-1.5 bg-premium-yellow rounded-full" /> Narrative Direction
                                     </li>
@@ -49,19 +49,6 @@ const About = () => {
                                         <span className="w-1.5 h-1.5 bg-premium-yellow rounded-full" /> Sound Design
                                     </li>
                                 </ul>
-                            </div>
-
-                            <div>
-                                <h3 className="text-sm font-bold text-white mb-6 uppercase tracking-widest">Connect</h3>
-                                <div className="space-y-4 text-gray-400 font-light text-sm tracking-wide">
-                                    <p>Based in India, Available Worldwide</p>
-                                    <a href="mailto:contact@ashikjose.com" className="block text-white hover:text-premium-yellow transition-colors cursor-pointer">contact@ashikjose.com</a>
-                                    <div className="flex gap-4 pt-2">
-                                        <a href="#" className="uppercase text-xs font-bold tracking-widest border-b border-transparent hover:border-premium-yellow transition-all">Ig</a>
-                                        <a href="#" className="uppercase text-xs font-bold tracking-widest border-b border-transparent hover:border-premium-yellow transition-all">Tw</a>
-                                        <a href="#" className="uppercase text-xs font-bold tracking-widest border-b border-transparent hover:border-premium-yellow transition-all">In</a>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>

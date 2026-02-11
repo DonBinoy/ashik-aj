@@ -18,7 +18,7 @@ const Contact = () => {
                     </h2>
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                         <MagneticButton>
-                            <a href="mailto:contact@ashikjose.com" className="w-48 h-48 rounded-full bg-premium-yellow flex flex-col items-center justify-center text-black font-bold uppercase tracking-widest text-sm hover:scale-110 transition-transform duration-500">
+                            <a href="mailto:ashikjose324@gmail.com" className="w-48 h-48 rounded-full bg-premium-yellow flex flex-col items-center justify-center text-black font-bold uppercase tracking-widest text-sm hover:scale-110 transition-transform duration-500">
                                 <span>Email Me</span>
                                 <ArrowUpRight size={20} className="mt-2" />
                             </a>
@@ -41,8 +41,8 @@ const Contact = () => {
                         <ul className="space-y-2 text-gray-500 text-sm font-mono uppercase">
                             {[
                                 { name: 'Instagram', url: 'https://www.instagram.com/a_j_ashik/' },
-                                { name: 'Twitter', url: '#' },
-                                { name: 'LinkedIn', url: '#' },
+                                { name: 'Facebook', url: 'https://www.facebook.com/ashik.josemundananickal' },
+                                { name: 'LinkedIn', url: 'https://www.linkedin.com/in/ashik-jose-54867b250' },
                                 { name: 'Vimeo', url: '#' }
                             ].map(social => (
                                 <li key={social.name}><a href={social.url} target="_blank" rel="noopener noreferrer" className="hover:text-premium-yellow transition-colors">{social.name}</a></li>
@@ -52,8 +52,8 @@ const Contact = () => {
                     <div>
                         <h4 className="text-sm font-bold text-white uppercase tracking-widest mb-6">Contact</h4>
                         <ul className="space-y-2 text-gray-500 text-sm font-mono uppercase">
-                            <li><a href="mailto:hello@ashikjose.com" className="hover:text-premium-yellow transition-colors">hello@ashikjose.com</a></li>
-                            <li>+91 987 654 3210</li>
+                            <li><a href="mailto:ashikjose324@gmail.com" className="hover:text-premium-yellow transition-colors">ashikjose324@gmail.com</a></li>
+                            <li>+91 9947887960</li>
                         </ul>
                     </div>
                     <div className="flex flex-col justify-between">

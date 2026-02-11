@@ -1,15 +1,15 @@
 import { useEffect, useState } from 'react';
 import Lenis from 'lenis';
 import { AnimatePresence } from 'framer-motion';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Portfolio from './components/Portfolio';
-import About from './components/About';
-import Contact from './components/Contact';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
 import CustomCursor from './components/CustomCursor';
 import Preloader from './components/Preloader';
 import AuroraBackground from './components/AuroraBackground';
-import GravityMode from './components/GravityMode';
+import FloatingContact from './components/FloatingContact';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   console.log('App component rendering...');
@@ -55,16 +55,16 @@ function App() {
 
 
 
-          <GravityMode />
+          <FloatingContact />
 
           <CustomCursor />
           <Navbar />
-          <main className="relative z-10">
-            <Hero />
-            <Portfolio />
-            <About />
-            <Contact />
-          </main>
+          <ScrollToTop />
+
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
+          </Routes>
         </>
       )}
     </div>

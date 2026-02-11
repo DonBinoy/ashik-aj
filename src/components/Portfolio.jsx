@@ -1,5 +1,6 @@
 import { useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const projects = [
     {
@@ -132,9 +133,9 @@ const Portfolio = () => {
                 </div>
 
                 <div className="mt-24 text-center">
-                    <a href="#" className="inline-block px-12 py-4 border border-white/20 rounded-full uppercase tracking-widest text-xs font-bold hover:bg-white hover:text-black transition-all duration-300">
+                    <Link to="/projects" className="inline-block px-12 py-4 border border-white/20 rounded-full uppercase tracking-widest text-xs font-bold hover:bg-white hover:text-black transition-all duration-300">
                         View All Projects
-                    </a>
+                    </Link>
                 </div>
             </div>
         </section>
